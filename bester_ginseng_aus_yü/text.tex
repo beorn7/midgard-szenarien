@@ -1,5 +1,5 @@
-\documentclass[12pt,a4paper,germanpar]{scrartcl}
-\usepackage{german,anysize,multicol,supertabular,graphicx}
+\documentclass[11pt,a4paper,germanpar]{scrartcl}
+\usepackage{german,anysize,multicol,supertabular,graphicx,hyperref}
 \usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
 %\usepackage{helvet}
@@ -18,13 +18,22 @@
 
 \newcommand{\midgard}{\textsc{Midgard}}
 
-\author{Bj"orn~Rabenstein\\bjoern@rabenste.in}
+\author{Bj"orn~Rabenstein\\\href{mailto:bjoern@rabenste.in}{\nolinkurl{bjoern@rabenste.in}}}
 \title{Bester Ginseng aus Yü}
-\subtitle{\midgard-Szenario für 3--5 SpF der Grade 1--3}
+\subtitle{\midgard-Abenteuer für 3--5 SpF der Grade 1--3}
 
 \begin{document}
 
 \maketitle
+
+\noindent\fbox{%
+\parbox{\textwidth}{%
+Dieses Material steht unter der Creative-Commons-Lizenz \emph{Namensnennung
+-- Nicht-kommerziell -- Weitergabe unter gleichen Bedingungen 4.0
+International}. Um eine Kopie dieser Lizenz zu sehen, besuchen Sie
+\url{http://creativecommons.org/licenses/by-nc-sa/4.0/}.
+}%
+}
 
 \tableofcontents
 
@@ -32,9 +41,58 @@
 
 \section{Einleitung}
 
+Im Januar 2015 erfüllte ich mir so eine Art Jugendtraum und begann,
+eine KanThaiPan-Kampagne zu leiten, in deren Zentrum die "`vier
+Klassiker"', also die vier Richter-Di-Abenteuer, stehen sollten. Ein
+Vorteil der späten Traumerfüllung war, daß wir wirklich mit dem
+\emph{Fall des Mondloses} anfangen konnten. Dadurch stellte sich aber
+die Frage, wie wir die gut zehnjährige Lücke zwischen dem
+\emph{Mondlos} und den \emph{Füchsen} überbrücken sollten. Selbst mit
+einem bißchen Füllmaterial und Tricks blieb bei uns eine Lücke von
+2392\,nL bis 2400\,nL. Schickte man die SpF wirklich so lange auf
+Abenteuer aus, dann wären sie danach so ca. auf Gr9, was dann doch
+etwas heftig wäre für den Rest der Kampagne, ganz abgesehen mal davon,
+wie lange man dafür bräuchte. Natürlich hätte ich jetzt die SpF acht
+Jahre lang ihrem "`normalen"' Leben nachgehen lassen können, oder ich
+hätte die Geschichte umschreiben können und die anderen
+Richter-Di-Abenteuer früher stattfinden lassen. Beide Möglichkeiten
+fand ich aber aus verschiedenen Gründen unbefriedigend. So habe ich
+aus der Not eine Tugend gemacht und dieses Abenteuer entworfen, wo als
+Teil der Handlung die SpF einen Zeitsprung unternehmen werden, und das
+sogar ohne die naheliegende \emph{Mach über die Zeit}, sondern unter
+Ausnutzung bekannter Eigenschaften des Multiversums.
+
+Um mit dieser Klappe gleich noch ein paar andere Fliegen zu schlagen,
+passieren noch ein paar andere Dinge:
+
+\begin{itemize}
+\item Die SpF lernen Ming kennen, den wichtigen Protagonisten aus
+  \emph{Kurai-Anat, das Schwarze Herz}. Das ermöglicht es, später den
+  Kernteil dieses Abenteuers auch mit einer reinen KanThai-Gruppe zu
+  spielen. Ein paar Szenen aus dem Abenteuer, die sonst gar nicht mehr
+  zur Geltung kämen, können hier auch gleich verwurstet werden.
+\item In den \emph{Perlen der Füchse} schmuggelt der \emph{Weiße
+    Lotus} Gingseng in weitem Bogen von irgendwo am Schattenmeer durch
+  Minangpahit über den Seeweg nach KuenKung. Dabei liegt doch der
+  Hauptproduzent von Gingseng, die Provinz Yü, mehr oder weniger
+  direkt vor den Toren der Stadt. Dieses Abenteuer liefert eine
+  Erklärung, wie es dazu kommen konnte. Obendrein erfährt man ein
+  wenig über das Verhältnis zwischen \emph{Weißer Orchidee} und
+  \emph{Weißem Lotus}. Letzterer war ja zu Beginn des Abenteuers noch
+  keine eigenständige Geheimgesellschaft, sondern lediglich eine Loge
+  von ersterer.
+\end{itemize}
+
+Ich kann mir vorstellen, daß auch andere Gruppen in der gleichen
+Situation stecken. Daher habe ich mich entschlossen, das Abenteuer
+hiermit der Allgemeinheit zur Verfüngung zu stellen. Ich bitte, den
+etwas rohen Ausarbeitungszustand zu verzeihen. Ich habe im
+wesentlichen auf die Schnelle meine Notizen ausformuliert. Karten und
+Skizzen sind in dem beklagenswerten Zustand eingescannt worden, in dem
+sie mein bescheidenes manuelles Zeichentalent hinterlassen hat.
 
 Verweise auf Regelbücher, das KanThaiPan-Quellenbuch und diverse
-Szenarienhefte erfolgen nach dem Schema [\emph{XXX n}], wobei
+Abenteuerhefte erfolgen nach dem Schema [\emph{XXX n}], wobei
 \emph{XXX} die Abürzung für das Buch bzw. Heft ist (siehe folgende
 Liste) und \emph{n} die Seitenzahl im jeweiligen Werk.
 
@@ -47,60 +105,194 @@ Liste) und \emph{n} die Seitenzahl im jeweiligen Werk.
 \item[PdF] \emph{Die Perlen der Füchse} -- Abenteuer.
 \end{description}
 
-Dieses Szenario beziehte sich auf die 4. Auflage des \midgard-Regelwerkes.
+Dieses Abenteuer beziehte sich auf die 4. Auflage des \midgard-Regelwerkes.
 
 \section{Überblick}
 
 \section{Dramatis personae}
 
 \begin{description}
-\item[MingMing.] Händler der Weiße-Schlangen-Gilde in KuengKung und
+\item[MingMing.] Händler der Weiße-Schlangen-Gilde in KuenKung und
   heimlicher Elementarbeschwörer.
 \item[DiFang.] Ginsengsammler aus dem Volk der Yü. Geschäftspartner
   und Vertrauter Mings.
 \item[HaiFeng.] Kapitän in Diensten Mings. Opfer der KuroScha.
-\item[ChenXuang.] Wenig integrer Richter von KuengKung, Vorgänger von
+\item[ChenXuang.] Wenig integrer Richter von KuenKung, Vorgänger von
   DiYung.
-\item[LiXuang.] Händler aus KuengKung. Spezialist für den
+\item[LiXuang.] Händler aus KuenKung. Spezialist für den
   Ginsenghandel mit den Yü.
 \item[AMei.] Älteste der Yü. Ansprechpartnerin von LiXuan.
 \item[TsueChen.] Schwarzer Adept mit stetig sich verbesserndem
   Verhältnis zur Familie Xuang. Zuständig für die Ginsengversorgung
   des KuraiAnat.
+\item[MuLanLu.] Renommierteste YiScheng (Ärztin) von
+  KuenKung. Mitglied des \emph{Weißen Lotus}.
 \item[KwanLi.] Misogyner Dorfältester von OnchiRa.
 \item[MeiHua.] Seine Frau.
 \item[Yao.] Ihr heimlicher Liebhaber. In Wirklichkeit ein YamaOtoko.
 \item[KokoRoDi.] Orchideenklinge, Schwester einer SpF, vermeintlich
   den \emph{Weg der Tausend} gegangen.
-\item[BaiSseYuen.] Dschinn. Lehrmeister von Ming.
+\item[BaiSseYuen -- "`Weiße Wolke"'.] Dschinn. Lehrmeister von Ming.
 \end{description}
 
 Agenten der \emph{Weißen Orchidee}, Mitglieder der Familie Xuan und
-deren Schergen, KuroScha, Ginsengsammler der Yü, Meerjungfrauen, Wako\dots
+deren Schergen, KuroScha, Ginsengsammler der Yü, Meerjungfrauen, Wako,
+Hunar, Luftrochen\dots
 
 \section{Zeitablauf}
 
-% 4.12.2392nL Beginn 4.13.GuiYou
+Die Datumsangaben erfolgen nach westlichem Muster (mit dem Bärenmond
+als ersten Monat des Jahres). Zur Umrechnung in kanthanische
+Jahresangaben siehe folgende Liste.
 
-\section{Ermittlungen in KuengKung}
+\begin{itemize}
+\item 01. Wolf 2391\,nL -- 28. Draug 2392\,nL: GuiYou (Hahn)
+\item 01. Wolf 2392\,nL -- 28. Draug 2393\,nL: JiaXu (Hund)
+\item 01. Wolf 2393\,nL -- 28. Draug 2394\,nL: YiHai (Eber/Schwein)
+\item 01. Wolf 2394\,nL -- 28. Draug 2395\,nL: BingZi (Ratte)
+\item 01. Wolf 2395\,nL -- 28. Draug 2396\,nL: DingChou (Ochse)
+\item 01. Wolf 2396\,nL -- 28. Draug 2397\,nL: WuYin (Tiger)
+\item 01. Wolf 2397\,nL -- 28. Draug 2398\,nL: JiMao (Hase)
+\item 01. Wolf 2398\,nL -- 28. Draug 2399\,nL: GengLong (Drache)
+\item 01. Wolf 2399\,nL -- 28. Draug 2400\,nL: XinSi (Schlange)
+\item 01. Wolf 2400\,nL -- 28. Draug 2401\,nL: RenWu (Pferd)
+\end{itemize}
+
+\subsection{Vor Beginn des Abenteuers}
+
+\begin{description}
+\item[In grauer Vorzeit:] Die Arracht identifizieren die
+  Neun-Blumen-Berge als besonders geeignet, ein Tor in eine Urwelt der
+  Luft/Holz-Sphäre zu errichten. Im Süden der heutigen Provinz Yü
+  errichten sie schließlich ein Weltentor nach RenSchenYo. Die
+  wichtigste Entdeckung auf dieser Welt war der Ginseng, der von den
+  Arracht auch auf Midgard angepflanzt wurde, allerdings mit wesentlich
+  geringerem Erfolg.
+\item[um 1000\,vL:] Mit der Entwicklung menschlicher Zivilisation in
+  KanThaiPan entsteht auch das Volk der Yü samt ihrer Religion des
+  Ginsenggottes. Die Priester belegen das Weltentor mit einem Tabu und
+  machen es für Menschen unauffindbar.
+\item[2337\,nL:] Der junge Ziegenhirte DiFang entdeckt beim Verfolgen
+  einer Ziege das Weltentor. Er folgt seiner Ziege nach RenSchenYo,
+  kann aber das Tor nicht umpolen, um zurückzukehren.
+\item[2343\,nL:] Durch einen Glücksfall kann DiFang einen Baumriesen
+  beim Umpolen des Tores beobachten und so nach Midgard zurückkehren,
+  wo in den wenigen Stunden, die er auf RenSchenYo verbracht hat,
+  sechs Jahre vergangen sind. Fortan nutzt DiFang die Kenntnis über
+  Ort und Umpolung des Weltentores, um zu einem legendären
+  Ginsengsammler aufzusteigen. Zum Handelspartner seines Vertrauens
+  entwickelt sich die Familie Ming aus KuenKung.
+\item[2385\,nL:] Der junge MingMing widmet sich dem Studium des
+  Multiversums. DiFang weiht ihn in sein Geheimnis ein und ermöglicht
+  ihm einen Besuch RenSchenYos, wo er schließlich auf seine spätere
+  übernatürliche Lehrerin BaiSseYuen trifft.
+\item[2391\,nL:] Der Schwarze Adept TsueChen wird vom Kronrat zum
+  Beauftragten für den Ginsenghandel ernannt. Seine Aufgabe ist es,
+  die Ginsengversorgung des KuraiAnat sicherzustellen. Er nimmt mit
+  der Familie Xuan auf, die bereits einen Großteil des Ginsenghandels
+  mit den Yü kontrolliert.
+\item[Herbst 2392\,nL:] Mit TsueChens Unterstützung übt LiXuang
+  zunehmend Druck auf die Yü aus, nur noch mit der Familie Xuang zu
+  handeln. Die \emph{Weiße Orchidee} beginnt, den Ginsenghandel der
+  Familie Xuang aktiv zu sabotieren und Ginseng in eigene Kanäle
+  umzulenken.
+\item[1. Draug 2392\,nL:] DiFang, der sich mittlerweile außerstande
+  sieht, gegen den Druck der anderen Yü weiterhin Ginseng an Ming zu
+  liefern, trift in OnchiRa ein, um dem dort wartenden HaiFeng statt
+  der erwarteten Ginsenglieferung ein versiegeltes Schreiben zu
+  überreichen. Kurz nach Abfahrt HaiFengs treffen drei Xuang-SaMurai
+  ein, die die Aufgabe haben, DiFangs Geheimnis zu enträtseln. Sie
+  bekommen mit, daß DiFang HaiFeng einen Brief übergeben hat. Diese
+  Information übermitteln sie per Brieftaube nach KuenKung.
+\item[2. Draug 2392\,nL:] DiFang verläßt OnchiRa, heimlich verfolgt
+  von den drei Xuang-SaMurai.
+\item[3. Draug 2392\,nL:] Eine Patrouille von vier Orchideenklingen
+  (unter ihnen KokoRo), die ebenfalls auf der Suche nach DiFang sind
+  und ihn in OnchiRa vermuten, trifft zufällig auf DiFang und seine
+  Verfolger. Unauffällig heften sie sich wiederum an die Fersen der
+  SaMurai.
+\item[4. Draug 2392\,nL:] Am Eingang des Verbotenen Tals bemerkt
+  DiFang seine Verfolger, die ihn daraufhin gefangennehmen
+  wollen. Dies ist für die Orchideenklingen Anlaß, nun
+  einzugreifen. Sie töten zwei der SaMurai, der dritte entkommt. Die
+  Orchideenklingen bedrängen dann DiFang, sich ihrer Seite
+  anzuschließen. DiFang gerät in Panik und flieht durchs Weltentor,
+  was er daraufhin sofort umpolt, um seine Verfolger
+  abzuschneiden. Die Orchideenklingen schlagen ein verborgenes Lager
+  auf. -- Gegen Abend kommt HaiFeng in KuenKung an und will sofort den
+  Brief an Ming übergeben. Noch im Hafenbereich betäubt ihn aber
+  hinterrücks ein KuroScha im Auftrag der Xuans und entwendet den
+  Brief. Die SpF finden den betäubten HaiFeng.
+\end{description}
+
+\subsection{Nach Beginn des Abenteuers}
+
+Dies ist der wahrscheinliche Ablauf. Je nach Aktionen der SpF kann
+sich natürlich einiges ändern.
+
+\begin{description}
+\item[5. Draug 2392\,nL:] Ming zeigt den Überfall auf HaiFeng bei
+  Gericht an, wobei ihm klar wird, daß von Seiten der Behörden keine
+  Bemühungen um Aufklärung zu erwarten sind. Spätestens jetzt
+  beauftragt er die SpF, dem Fall nachzugehen. -- Auf RenSchenYo wird
+  DiFang von BaiSseYuen auf die nächste Insel entführt. Da das Tor
+  immer noch umgepolt ist, dringen ab jetzt gelegentlich Luftrochen
+  nach Midgard vor.
+\item[7. Draug 2392\,nL:] Frühestmögliches Eintreffen der SpF in
+  OnchiRa. Mögliche Beobachtung des Zusammentreffens von Yao und
+  MeiHua. (Auch an späteren Tagen möglich.)
+\item[10. Draug 2392\,nL:] Frühestmögliches Eintreffen der SpF am
+  Weltentor. Mögliches Eintreffen der Verstärkung der Xuang-Krieger am
+  Weltentor.
+\item[Drachenmond 2393\,nL:] MeiHua bringt in OnchiRa ihren Sohn
+  Chang zur Welt.
+\item[2394\,nL:] Es ergeht eine kaiserliche Verordnung zur
+  Monopolisierung des Ginsenghandels mit den Yü. Die dahingehende
+  Lizenz wird der Familie Xuan erteilt. Die Yü beugen sich, und der
+  \emph{Weiße Lotus} erschließt andere Quellen für den Ginsenghandel,
+  während die \emph{Weiße Orchidee} noch längere Zeit versucht, das
+  Monopol durch Überfälle und Verbündete bei den Yü zu unterlaufen.
+\item[3497\,nL:] Richter ChenXuan wir pensioniert. DiYung wird (nicht
+  ganz ohne Einflußnahme seiner Familie) zum neuen Richter von
+  KuenKung ernannt.
+\item[Schlangenmond 2400\,nL:] Etwa zu diesem Zeitpunkt kehren die SpF
+  und DiFang nach Midgard zurück. -- In OnchiRa zeigt Chang immer mehr
+  bestialische Züge. Es werd Zeit für Yao, seinen Sohn an sich zu
+  nehmen\dots
+\end{description}
+
+\section{Ermittlungen in KuenKung}
 
 \section{Der Weg nach OnchiRa}
+
+% zur See 
 
 % Wako
 
 % Meerjungfrauen
 
-\section{Tête-à-tête in OnchiRa}
+% Wetter!
+
+\section{Die Schöne und das Biest}
 
 \section{Zwischen SchuSchan und SongSchan}
 
+% TODO: Wetter!
+
 \section{RenSchenYo -- die Ginsengwelt}
+
+% Oszillation: Schnell 2343 und jetzt, langsam 2385
 
 \appendix
 
 \section{NSpF}
 
 \subsection{Ming}
+
+\subsection{TsueChen}
+
+% Direktor LangTsong im Finanzministerium HuPu im Range eines
+% Silberfasans BoZjan (in DSH im Range eines Pfaus
 
 \subsection{KokoRoDi}
 

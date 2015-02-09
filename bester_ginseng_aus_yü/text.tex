@@ -8,7 +8,7 @@ twocolumn=on,
 titlepage=on,
 parskip=half
 ]{scrartcl}
-\usepackage{german,multicol,supertabular,graphicx,hyperref}
+\usepackage{german,supertabular,graphicx,hyperref,pbox}
 \usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
 %\usepackage{helvet}
@@ -25,6 +25,7 @@ parskip=half
 
 \hyphenation{NSpF}
 \hyphenation{Re-gel-mo-di-fi-ka-tio-nen}
+\hyphenation{Bai-Sse-Yuen}
 
 \newcommand{\midgard}{\textsc{Midgard}}
 
@@ -46,10 +47,7 @@ International}. Um eine Kopie dieser Lizenz zu sehen, besuchen Sie
 
 \maketitle
 
-
 \tableofcontents
-
-%\begin{multicols}{2}
 
 \section{Einleitung}
 
@@ -71,7 +69,7 @@ Richter-Di-Abenteuer früher stattfinden lassen. Beide Möglichkeiten
 fand ich aber aus verschiedenen Gründen unbefriedigend. So habe ich
 aus der Not eine Tugend gemacht und dieses Abenteuer entworfen, wo als
 Teil der Handlung die SpF einen Zeitsprung unternehmen werden, und das
-sogar ohne die naheliegende \emph{Mach über die Zeit}, sondern unter
+sogar ohne die naheliegende \emph{Macht über die Zeit}, sondern unter
 Ausnutzung bekannter Eigenschaften des Multiversums.
 
 Um mit dieser Klappe gleich noch ein paar andere Fliegen zu schlagen,
@@ -109,8 +107,11 @@ Abenteuerhefte erfolgen nach dem Schema [\emph{XXX n}], wobei
 Liste) und \emph{n} die Seitenzahl im jeweiligen Werk.
 
 \begin{description}
+\item[ARK] \emph{Das Arkanum} -- \midgard-Regelwerk 4. Auflage.
+\item[BES] \emph{Das Bestiarium} -- \midgard-Regelwerk 4. Auflage.
 \item[DFR] \emph{Das Fantasy-Rollenspiel} -- \midgard-Regelwerk 4. Auflage.
 \item[DSH] \emph{Kurai-Anat, das Schwarze Herz} -- Abenteuer.
+\item[KOM] \emph{Das Kompendium} -- \midgard-Regelwerk 4. Auflage.
 \item[KTP] \emph{Unter dem Schirm des Jadekaisers} -- Quellenbuch
   KanThaiPan 2. Auflage.
 \item[MdS] \emph{Meister der Sphären} -- \midgard-Regelwerk 4. Auflage.
@@ -242,6 +243,7 @@ entsprechende Veränderungen vornehmen.
 \item[Yao.] Ihr heimlicher Liebhaber. In Wirklichkeit ein YamaOtoko.
 \item[KokoRo.] Orchideenklinge, Schwester einer SpF, vermeintlich
   den \emph{Weg der Tausend} gegangen.
+\item[LonChen.] Hauptmann der Orchideenklingen.
 \item[BaiSseYuen -- "`Weiße Wolke"'.] Dschinn. Lehrmeisterin von Ming.
 \item[MiTo.] Priester des KuTuh, z.Zt. Abt im Kloster DaKuMi. Verwandt
   mit den Xuan in KuenKung, wo er im Laufe der 90er Jahre zum
@@ -396,7 +398,7 @@ Der Bewußtlose erscheint unverletzt und auch nach professionieller
 Untersuchung bei guter Gesundheit -- mit Ausnahme des Umstandes, daß
 er Bewußtlos ist. Er wurde offenbar nicht ausgeraubt, denn jede Menge
 einfach zu entwendender Wertgegenstände und Waffen trägt er noch bei
-sich: Eine Geldbörse mit um die 100\,SS, Ohrringe, Gewandspange, ein
+sich: Eine Geldbörse mit um die 100SS, Ohrringe, Gewandspange, ein
 DaDao, ein Tanto\dots Die Tunika ist allerdings geöffnet, als ob
 jemand etwas aus der Innentasche entfernt hätte. Im Nacken steckt ein
 kleiner Blasrohrpfeil.  Die vermutliche Schußrichtung deutet auf ein
@@ -482,7 +484,7 @@ einiger Lehrmeister), würde sich aber auch auf eine erfolgsabhängige
 Bezahlung wie z.\,B. einige Prozent Gewinnanteil am wieder in Gang
 gebrachtem Ginsenghandel des nächsten Jahres. Sind die SpF eher auf
 eine monetäre Belohnung aus, läßt sich auch das einrichten.  Grobe
-Richtlinie: 1000 bis 2000\,GS pro Person im Erfolgsfalle, zuzüglich
+Richtlinie: 1000 bis 2000GS pro Person im Erfolgsfalle, zuzüglich
 Spesen, bei vorhandener Vertrauensbasis möglicherweise auch ein
 Vorschuß.
 
@@ -491,15 +493,13 @@ aufbrechen und kann daher nicht selber bei Nachforschungen
 mitwirken. Er möchte die SpF für den Fall vorbereiten, daß sie das
 Weltentor benutzen müssen, ohne ihnen aber das Geheimnis seiner
 Existenz zu verraten, bevor sie es selbst entdecken. Daher gibt er
-ihnen einen kryptischen Hinweis, sobald er selber aufbricht oder die
-SpF in die Provinz Yü abreisen:
+ihnen einen kryptischen Hinweis, sobald er selber aufbricht oder aber
+die SpF in die Provinz Yü abreisen:
 
-\fbox{%
-\parbox{\linewidth}{%
+\fbox{\pbox{0.96\linewidth}{%
 Solltet ihr auf eurer Reise vor verschlossenem Tor stehen, so sprecht
-die Worte "`Kra'anesch"', und euch wird geöffnet werden.
-}%
-}
+die Worte "`Kra'anesch"', und euch wird geöffnet werden. 
+}}
 
 Mit einem \textbf{EW:Dunkle Sprache} kommt man zu dem Schluß, daß es
 sich wohl um eine Wort aus der Dunklen Sprache handeln könnte, kann
@@ -532,12 +532,7 @@ XuSchau gestattet.
 
 Es ist leicht in Erfahrung zu bringen, daß die Xuan eine
 alteingesessene mächtige Familie ist, die seit Generationen in
-Konkurrenz mit der aktuellen Herrscherfamilie Tchung steht. Der Handel
-ist nur ein Teil ihrer Aktivitäten, und dabei engagieren sie sich
-nicht in der größten ortsansässigen Gilde, der
-\emph{Weißen-Schlangen-Gilde}, sondern sympathisieren eher mit der
-\emph{Gilde des endlosen Knotens}, die ihre Hauptsitze in KueiChan
-und YenChan hat.
+Konkurrenz mit der aktuellen Herrscherfamilie Tchung steht.
 
 Es bedarf genauerer Recherchen an geeigneten Orten und mittels
 geeigneter Fertigkeiten wie z.\,B. \emph{Gassenwissen},
@@ -545,6 +540,11 @@ geeigneter Fertigkeiten wie z.\,B. \emph{Gassenwissen},
 Informationen herauszufinden (in aufsteigender Schwierigkeit):
 
 \begin{itemize}
+\item Der Handel ist nur ein Teil der Aktivitäten der Xuan. Sie sind
+  nicht in der größten ortsansässigen Händlergilde, der
+  \emph{Weißen-Schlangen-Gilde}, Mitglied, sondern sympathisieren eher
+  mit der \emph{Gilde des endlosen Knotens}, die ihre Hauptsitze in
+  KueiChan und YenChan hat.
 \item Die Familie hängt dem KuTuh-Glauben an und hat beste
   Verbindungen zum Tempel der Düsternis.
 \item Während die Tchung eher für die Unabhängigkeit KuenKungs von der
@@ -588,19 +588,19 @@ anhand der Informationen in Abschnitt~\ref{yue} gestalten.
 \subsection{Zur See}
 
 Wenn der SpL es den SpF nicht zu schwer machen will, stellt Ming
-HaiFeng samt Mannschaft und Schiff (die \emph{HoHsien} für die Reise
-zur Verfügung. Die Crew ist erfahren und wehrhaft genug, so daß es
-nicht zu Problemen mit den Wako (den kanthanischen Piraten) kommen
-sollte. Will der SpL der Gruppe einen Kampf liefern, kann er einen
-Piratenüberfall im Stile von [DSH\,30f] inszenieren. Besteht die
-Gruppe aus erfahrenen Seeleuten, kann der SpL für HaiFeng auch andere
-wichtige Pläne vorsehen, so daß die SpF die Seereise selber
-organisieren müssen.
+HaiFeng samt Mannschaft (12 Mann) und Schiff (die \emph{HoHsien}, eine
+Hochseedschunke) für die Reise zur Verfügung. Die Crew ist erfahren
+und wehrhaft genug, so daß es nicht zu Problemen mit den Wako (den
+kanthanischen Piraten) kommen sollte. Will der SpL der Gruppe einen
+Kampf liefern, kann er einen Piratenüberfall im Stile von [DSH\,30f]
+inszenieren. Besteht die Gruppe aus erfahrenen Seeleuten, kann der SpL
+für HaiFeng auch andere wichtige Pläne vorsehen, so daß die SpF die
+Seereise selber organisieren müssen.
 
 Das Wetter ist gutmütig, milde Temperaturen, kein Niederschlag und
 mittelstarke, gut zum Segeln geeignete Winde. Die HoHsien erreicht
-OnchiRa in drei Tagen. SpF brauchen vielleicht je nach Fähigkeiten
-etwas länger.
+OnchiRa nach drei Tagen kurz vor Sonnenuntergang. SpF brauchen
+vielleicht je nach Fähigkeiten etwas länger.
 
 In jedem Falle bietet es sich an, die Begegnung mit den Seejungfrauen
 aus [DSH\,31ff] einzubauen. Der \emph{Rat}, den die Seejungfrauen
@@ -615,12 +615,11 @@ Kampagne aus.
   für eine lange Zeit.
 \end{quote}
 
-Das Schiff, die HoHsien, ist nach einer der acht Unsterblichen benannt
-(was jeder, der über \emph{Kenntnis der fünf Klassiker} verfügt,
-erkennt, sobald er über den Namen nachdenkt. Das Attribut dieser
-Unsterblichen ist die Wolke. Die kleine hölzerne Wolke ist also die
-HoHsien. Die großen hölzernen Wolken sind die schwebenden Inseln auf
-RenSchenYo.
+Die HoHsien ist nach einer der acht Unsterblichen benannt (was jeder,
+der über \emph{Kenntnis der fünf Klassiker} verfügt, erkennt, sobald
+er über den Namen nachdenkt. Das Attribut dieser Unsterblichen ist die
+Wolke. Die kleine hölzerne Wolke ist also die HoHsien. Die großen
+hölzernen Wolken sind die schwebenden Inseln auf RenSchenYo.
 
 \begin{quote}
   Wenn die Frau eine Frau ist,\\
@@ -650,18 +649,191 @@ diese lange und mühselige Reise mit allerlei Annehmlichkeiten
 ausfüllen kann.
 
 \section{Die Schöne und das Biest}
+\label{biest}
+
+OnchiRa wird in [DSH\,34ff] teilweise beschrieben. Z.\,Zt. besteht
+allerdings keine Gefahr, als Opfer für das Neumondfest auserwählt zu
+werden, weil die Mondfamilie, zu der OnchiRa gehört, für eine Weile
+verschont bleiben wird. Nichtsdestotrotz ist KwanLi immer darauf aus,
+einen Vorwand zu finden, Fremde, die sich eine Unregelmäßigkeit
+zuschulden kommen lassen, gefangenzunehmen, um für den
+Fall der Fälle ein Opfer zur Verfügung zu haben. Dies betrifft
+z.\,B. SpF ohne Paß, insbesondere solche, die nicht den Eindruck
+erwecken, eine bedeutende Persönlichkeit zu sein, aber auch Yao in
+Menschengestalt, wenn er mit MeiHua erwischt wird (siehe unten).
+
+HaiFeng will am liebsten am nächsten Tag gleich wieder abreisen und
+bietet den SpF an, einen Termin für die Abholung auszumachen. Können
+die SpF glaubwürdig darlegen, daß sie ihre Aufgabe in einigen wenigen
+Tagen erledigen werden, läßt er sich möglicherweise überzeugen,
+solange in OnchiRa auszuharren.
+
+\subsection{Unterkunft}
+
+KwanLi ist nicht nur der Dorfälteste, sondern betreibt auch das
+einzige Gasthaus des Dorfes. Gäste gibt es eher selten, aber das Haus
+dient auch als Ort für Versammlungshalle für die Dörfler und kann
+trotz der primitiven Lehmbauweise mit einer gewissen Gemütlichkeit
+aufwarten. Die Übernachtung auf in der Halle ausgelegten
+Reisstrohmatten verspricht sogar, etwas komfortabler zu sein als di
+auf der HoHsien. Serviert wird eine Art Suschi, das nicht nur allerlei
+frischen Fisch, sondern auch getrocknete Riesenqualle, eine lokale
+Delikatesse, enthält. Dazu gibt es Ziegenmilch und Reiswein. All dies
+zu recht günstigen Preisen.
+
+Der Gesamteindruck wird allerdings von der rauhen Umgangsform
+KwanLis getrübt. Insbesondere fällt sehr unangenehm auf, wie er seine
+junge hübsche Frau MeiHua rumkommandiert.
+
+\subsection{Rendezvous in der Abenddämmerung}
+
+Während KwanLi grummelnd den SpF und einigen Fischern das Abendessen
+serviert, schickt er MeiHua nach draußen, um die Ziegen zu
+melken. Aufmerksame SpF merken mit \emph{Menschenkenntnis}, daß
+MeiHua, obwohl sie sichlich unter ihrer Situation leidet, eine
+verborgene freudige Erwartung hegt, als sie das Haus verläßt.
+
+Die Ziegenherde der Li grast einen guten Kilometer entfernt am
+Waldrand. Dort wartet in der Abenddämmerung niemand anders als Yao (in
+Menschengestalt) auf sie. Siehe Abschnitt \ref{yao} für den
+Hintergrund. Vorsichtige SpF können MeiHua unbemerkt folgen und das
+Rendezvous beobachten. Die beiden Schönheiten vom Lande sind ganz dem
+Liebesrausch ergeben und daher nicht besonders aufmerksam. Nach dem
+Schäferstündchen hilft Yao noch beim Ziegenmelken, bevor er in die
+Dunkelheit des Waldes verschwindet. Mit einem \emph{EW:Tierkunde}
+fällt auf, daß die Ziegen sich bereitwillig von MeiHua melken
+lassen, aber bei Yao eine gewisse Unruhe zeigen.
+
+\subsection{Ermittlungen in OnchiRa}
+
+Die SpF können leicht in Erfahrung bringen, daß DiFang am 1. Draug in
+OnchiRa eingetroffen und kurz darauf HaiFeng ausgelaufen ist. Die
+Übergabe der versiegelten Nachricht hat aber nur ein Fischer
+beobachtet, den die SaMurai der Xuan später rein zufällig befragt
+haben.
+
+Ebenso kann jeder im Dorf berichten, daß am Abend des 1. Draug auch
+noch drei stattliche Krieger eingetroffen sind. Nur wenige können vom
+dunkelblauen Dreizack berichten, der als Insignie auf den Rüstungen
+der Krieger zu sehen war. Wer sich in KuenKung auskennt (alternativ
+kann auch \emph{Landeskunde} helfen) weiß, daß der blaue Dreizack das
+Zeichen der Xuan ist.
+
+Sowohl die Krieger wie auch DiFang sind im Gasthaus der Li
+untergekommen. Alle Bewohner des Hauses können die Auskunft geben, daß
+am 2. Draug zunächst DiFang und bald darauf die Krieger aufgebrochen
+sind Richtung Küstenstraße. Ihr Reiseweg ist in der Karte eingetragen.
+
+\subsection{Auf der Spur}
+
+Die Küstenstraße verläuft nicht unmittelbar am Meer, weil das Ufer
+dafür zu steil und felsig ist, und damit auch nicht direkt durch
+OnchiRa. Man muß eine gute Wegstunde einen Pfad hinaufsteigen, um sie
+zu erreichen. DiFang hinterläßt nur wenige Spuren, aber die drei
+Xuan-SaMurai sind weniger subtil vorgegangen, zudem sie sich selbst
+als Verfolger und nicht Verfolgte verstanden und daher nicht um
+Vermeidung von Spuren bemüht haben. Die Regeln für Verfolgungsjagden
+im Freiland [DFR\,182f] finden Anwendung, allerdings werden pro Tag
+Alter der Spur nur \textbf{WM-1} angerechnet, da es zu keinerlei
+Niederschlag gekommen ist und es zu dieser Zeit fast keinen Verkehr
+auf der Straße gibt, also die Spuren nicht mit anderen Spuren
+überlagert werden. Sowohl auf der Küstenstraße als auch entlang von
+Bächen gibt es \textbf{WM+6} für die Bodenbeschaffenheit (die Straße
+besteht zumeist aus weichem Erdboden und die Flußtäler haben dichte
+Vegetation). Im Hügelland gilt für Bodenbeschaffenheit
+\textbf{WM+2}. Verlieren die SpF die Spur, liegt es nahe, einfach die
+Straße oder entlang des Baches weiterzugehen. Solange sie dabei
+wirklich noch entlang des Weges der Verfolgten sich bewegen, haben sie
+nicht nur einmalig, sondern \textbf{alle 1W6 Stunden} die Chance, mit
+einem \textbf{EW:Spurenlesen} mit zusätzlicher \textbf{WM-2} die Spur
+wieder aufzunehmen. Zusätzliche \textbf{EW:Spurenlesen} zum
+Wiederaufnehmen der Spur werden gewährt, wenn die SpF an einem
+Nachtlager vorbeikommen. DiFangs Nachlager, die \emph{WM+2} gewähren,
+sind in der Karte verzeichnet. Die SaMurai haben jeweils ca. einen
+Kilometer vorher ihr Lager aufgeschlagen. Ihr größeres Nachtlager
+gewährt \textbf{WM+6}. Solange die SpF die Spur nicht verloren haben,
+finden sie die Nachtlager automatisch.
+
+An der Stelle, an der DiFang am 4. Draug vom Bach ins Hügelland
+abgebogen ist (\fbox{1} auf der Karte), ist ein gesonderter
+\textbf{EW:Spurenlesen} (mit der üblichen WM) fällig, um das Gewirr an
+Spuren richtig zu deuten. Mißlingt dieser Wurf, kommen die SpF zu dem
+Schluß, daß es wohl weiter bachaufwärts gehen muß. Beim nächsten
+Gelingen des \textbf{EW:Spurenlesen} wird den SpF klar, daß Spuren
+hin- und zurückführen, wobei die Spuren zurück von einer etwa doppelt
+so großen Gruppe stammen. Sie können dann die zurückführenden Spuren
+verfolgen (jetzt mit WM für eine größere Gruppe von 5--10 Verfolgten)
+und bei \fbox{1} einen weiteren \textbf{EW:Spurenlesen} versuchen, um
+die abzweigenden Spuren richtig zu erkennen.
+
+Bei einer Entfernung von weniger als 10km von AMeis Winterlager gibt
+es übrigens so viel zusätzliche und frischere Spuren, daß es unmöglich
+ist, die mehrere Tage alten Spuren von DiFangs und seiner diversen
+Verfolger noch zu identifizieren.
+
+Was ist nun aber der Verlauf der Spuren zu erklären? Am 3. Draug zog
+DiFang bachaufwärts, gefolgt von den drei SaMurai. Er traf am Abend in
+AMeis Winterlager ein, um dort mit ihr über die zukünftigen
+Konditionen beim Ginsenghandel zu verhandeln (siehe Abschnitt
+\ref{winterlager}). Die SaMurai schlugen ihr Lager ein wenig entfernt
+auf, um zu beobachten, wohin DiFang als nächstes gehen würde. Eine
+Patrouille von vier Orchideenklingen (darunter KokoRo) hatte
+allerdings die gleiche Idee gehabt. Ihr Auftrag war es, DiFang zu
+finden. Ihre Recherchen hatten ergeben, daß er sich wohl demnächst bei
+AMei melden würde, so daß sie beschlossen hatten, in der Nähe von
+AMeis Lager auf seine Ankunft zu warten. Nun bemerkten die
+Orchideenklingen auch die SaMurai, aber nicht umgekehrt. Als DiFang am
+nächsten Morgen wieder bachabwärts zog, wurde er von den SaMurai
+verfolgt, die wiederum von den Orchideenklingen verfolgt wurden. Bei
+\fbox{1} bog DiFang dann ins Hügelland ab, mit den SaMurai und den
+Orchideenklingen im Schlepptau. Ab jetzt können die SpF also jeweils
+drei kurz hintereinanderliegender Nachtlager bemerken.
 
 \section{Zwischen SchuSchan und SongSchan}
 \label{yue}
+
+Die Provinz Yü ist in [KTP\,101] kurz beschrieben.
 
 Es sind zwei Karten beigelegt. Die eine zeigt das, was die SpF leicht
 in Erfahrung bringen können. Ming könnte ihnen z.\,B. so eine Karte
 zur Verfügung stellen. Die andere zeigt alle Orte an, die für das
 Abenteuer relevant sind. Selbst diese Karte ist nicht vollständig. Es
 gibt wesentlich mehr in der Provinz zu entdecken, was in keiner der
-beiden Karten eingezeichnet ist.
+beiden Karten eingezeichnet ist. Der SpL möge seinen Ideenfluß in
+keinster Weise enschränken.
 
-% TODO: Wetter!
+Die Siedlungsgebiet der Yü wird im Westen durch die Straße nach
+ChüanHoSchang und im Osten durch das Meer begrenzt, wobei die
+Küstendörfer nicht durch Yü bewohnt sind und auch nicht den
+entsprechenden Ausnahmeregeln unterstehen. Sie müssen z.\,B. durchaus
+Opfer auf den Weg der Tausend schicken.
+
+Im allgemeinen ist die Vegetation im Hügelland eher karg. Die Täler
+sind grüner, mit mitunter recht dichtem Buschwerk bis hin zu
+regelrechten Wäldchen, vorwiegend Bambus. In Küstennähe südlich von
+OnchiRa geht das Hügelland langsam in dichteren Wald und schließlich
+in den Dschungel von Minangpahit über.
+
+Das Wetter kann nach [KOM\,124] ermittelt werden (\emph{3E:
+  Sommerfeuchte Zone}). Vor allem in den höheren Lagen des Hügellandes
+kann es in den Winternächten empfindlich kalt werden mit regelmäßigem
+Bodenfrost, der ab und an stark genug ist, um die Hügelkuppen mit
+hübsch in der Morgensonne glitzerndem Reif zu überziehen. Zu
+Niederschlägen kommt es um diese Jahreszeit fast nie. Dafür weht fast
+immer ein starker Wind vorwiegend aus westlicher Richtung.
+
+Die Yü kennen ihr Land sehr gut und bereisen es zu Fuß vergleichsweise
+schnell unter Ausnutzung natürlicher Begebenheiten wie Wildwechsel und
+Flußverläufe. Für sie hat das Gelände \textbf{Typ II}
+[DFR\,85]. Ortsunkundige kommen durch die unwegsame Landschaft viel
+langsamer voran, wenn sie einfach versuchen, möglichst schnell in eine
+bestimmte Himmelsrichtung voranzukommen \textbf{(Geländetyp III)}. Wer
+allerdings sich spurenlesend an die Fersen eines Yü heftet, kommt
+natürlich auch in Genuß von dessen Ortskenntnis.
+
+Neben der offensichtlichen Erwerbsquelle des Ginsenghandels spielt
+auch die Ziegenhaltung eine große Rolle. Überall im Hügelland wird
+man auf Ziegenherden stoßen.
 
 Im folgenden werden besondere Orte von Nord nach Süd beschrieben,
 gefolgt von einer Liste möglicher Begegnungen.
@@ -675,36 +847,267 @@ Hänge des SchuSchan zu versetzen.
 \subsection{MuLanLus Anwesen}
 \label{mulanlus-anwesen}
 
+MuLanLus großzügig angelegter Landsitz befindet sich recht abgelegen
+an den südlichen Hängen des SchuSchan, in einiger Entfernung von den
+üblichen Lagen für die Anwesen der Reichen und Mächtigen aus KuenKung
+und anderswo. Dies prädestiniert es als "`Krankenstation"' für das
+Basislager der Orchideenklingen 50km südöstlich. Regimetreue
+Immobilienbesitzer am SchuSchan lassen ihre Anwesen von OrcaMurai
+bewachen. Die eher auf Unabhängigkeit bedachten bevorzugen ihre
+eigenen, menschlichen Wachleute. Zu letzteren gehört natürlich auch
+MuLan. Unbemerktes Eindringen in MuLans Anwesen ist nicht
+einfach. Vielleich gelangen die SpF aber auch als Freunde hierher --
+möglicherweise gar als Verwundete, wenn sie auf Seiten der
+Orchideenklingen an einem Kampf teilgenommen haben.
+
+Zu Beginn des Abenteuers befinden sich drei Orchideenklingen in
+Behandlung. Zwei Kämpfer sind bereits verstorben und wurden mangels
+Alternative diskret auf der Familiengrabstätte der Lu bestattet. Die
+frischen Gräber sind noch deutlich sichtbar. Während des Abenteuers
+werden immer wieder Verwundete und Gefallene eingeliefert.
+
+Gerade an diesem Ort erscheint die ganze Unternehmung besonders brutal
+und sinnlos. MuLan wird immer skeptischer und diskutiert die Sinnfrage
+ganz offen mit den Orchideenklingen, möglicherweise gar mit LonChen
+selbst, sollte er das Anwesen besuchen.
+
 \subsection{Basislager der Orchideenklingen}
+
+Vom gut in einem kleinen Nebental verborgenen Basislager aus führen
+die Orchideenklingen ihre Operationen aus. Ab und an gibt es einen
+koordinierten Angriff auf einen Handelszug der Xuan. Die meiste Zeit
+patroullieren kleinere Gruppen durch Yü, um Ginsengsammler zu bekehren
+und Informationen über bevorstehende Aktivitäten der Xuan zu
+sammeln. So kam es auch dazu, daß KokoRo ausgesendet wurde, um DiFang
+auf die eigene Seite zu ziehen oder hinter sein Geheimnis zu kommen.
+
+Ein langjähriger Assistens MuLans versorgt die im Lager eintreffenden
+Verwundeten und schickt die schwereren Fälle zu MuLans Anwesen.
+
+Die SpF werden das Basislager kaum zufällig entdecken, aber sie
+könnten als Gefangene oder Verbündete hierhin gebracht werden (im
+Zweifelsfalle mit verbundenen Augen).
 
 \subsection{Kloster DaKuMi}
 
+Zwei Wegstunden westlich der Straße nach ChüanHoSchang, an den
+ansteigenden Hängen des westlichen Teils der Neun-Blumen-Berge, gehen
+im Kloster DaKuMi die Mönche des KuTuh ihrem unaussprechlichem Tun
+nach. MiTo, der Abt, ist Mitglied der Familie Xuan und hat das Kloster
+den SaMurai seiner Familie als Basislager zur Verfügung gestellt. Dies
+ist in vielerlei Hinsicht das genaue Gegenstück zum Basislager der
+Orchideenklingen. LiXuan sucht das Kloster häufiger auf, um die
+Aktionen seiner SaMurai und Händler zu koordinieren.
+
 \subsection{KoSchiRa}
+
+Ähnlich wie OnchiRa ist KoSchiRa ein einfaches Fischerdorf. Allerdings
+besteht das ganze Dorf aus fanatischen KuTuh-Anhängern, die hier --~so
+verbunden mit seinem Element und so fern der institutionalisierten
+Verehrung in den zivilisierteren Teilen des Reiches~-- ganz eigene,
+besonders schreckliche Formen der Anbetung ihres dämonischen Gottes
+entwickelt haben. Unsägliche Rituale finden am Meer und in den nahen
+Sümpfen statt, als deren Folge sich sogar das Aussehen der
+Dorfbewohner verändert hat. Sollte es die SpF wirklich hierher
+verschlagen, kann der SpL hemmungslos Anleihen bei H.\,P. Lovecraft
+nehmen, um eine passende Stimmung zu erzeugen. (Hier drängt sich vor
+allem \emph{Schatten über Innsmouth} als Beispiel auf, wohlgemerkt
+lediglich als Inspiration für die Stimmung. Die Handlungsdetails
+passen selbstverständlich nicht. Bislang wurden auf Migard noch keine
+Tiefen Wesen gesichtet\dots)
 
 \subsection{Das Marschland}
 
-\subsection{Schattental und Weltentor}
+Zahlreiche der Bäche und Flüßchen, die die östlichen Neun-Blumen-Berge
+durchziehen, münden hier in einem ausgedehnten Delta ins Meer. Während
+gerade im Winter viele Bäche austrocknen, ist das Delta ganzjährig
+wasserführend. Bei Flut drückt das Meer Salzwasser ins Delta. Die
+Landschaft ist von Salzsümpfen und Marschland geprägt. Die
+Küstenstraße führt auf Knüppeldämmen über die sumpfigen Stellen, wird
+aber schlecht unterhalten und ist bei Hochwasser häufig überschwemmt.
+
+Als ob die finsteren Kultstätten der Bewohner KoSchiRas noch nicht
+genug wären, trifft man im Sumpf auf allerlei unangenehmer
+Zeitgenossen. Der SpL darf alle Register des Bestiariums ziehen. Neben
+normalen Blutegeln [BES\,362] gibt es sogar Todesegel [BES\,372].
+
+\subsection{Das Schattental}
+
+Am Ende eines schmalen verborgenen Tales, das DiFang
+\emph{Schattental} getauft hat, befindet sich ein von den Arracht in
+grauer Vorzeit errichtetes permanentes Weltentor nach RenSchenYo. Über
+dieses Weltentor wurde der Ginseng nach Midgard importiert. Für die
+Priester des Ginsenggottes ist dieser Ort ebenso heilig wie
+verstörend. Daher haben sie am Eingang des Tales, das den einzigen
+begehbaren Zugang zum Weltentor darstellt, in die dichte Vegetation
+ein sogenanntes \emph{Tabu} geflochten. Es führt dazu, daß denkende
+Wesen, die sich dem Tabu nähern, unbewußt von ihm wegsteuern. Dadurch
+wurde das Tal unauffindbar. Wer hingegen schon genau weiß, wo das Tal
+ist, und bewußt in das Tal hineingehen will, dem gelingt das ohne
+Probleme. Wesen mit tierischer Intelligenz sind vom Tabu nicht
+betroffen. Die düstere Ausstrahlung der uralten Gebäude rund um das
+Weltentor sorgt aber dafür, daß sich nur selten ein Tier ins Weltentor
+verirrt (und selbst dann wird es von den Hunar wieder nach Midgard
+geschickt, siehe Abschnitt \ref{hunar}). DiFang hat das Tal durch
+einen Zufall entdeckt. Eine seiner Ziegen wurde durch ein Raubtier
+verletzt und floh panisch in die dichte Vegetation am Eingang des
+Tales. DiFang folgte ihrer blutigen Spur und umging so den Zwang des
+Tabus. Die Xuan-SaMurai, die DiFang verfolgt haben, sowie die
+Orchideenklingen, die wiederum die SaMurai verfolgt haben, wurden
+ebenfalls durch äußere Einflüsse, nämlich die verfolgten
+Spuren. Genauso können die SpF durch das Verfolgen der Spuren ins Tal
+gelangen. Eine andere Möglichkeit wäre, den mitunter auftretenden
+Luftrochen auf ihrem Heimweg zu folgen (siehe Abschnitt
+\ref{begegnung-luftrochen}), wobei sie hierbei möglicherweise den
+Talkessel aus einer unzugänglichen Richtung entdecken. Selbst dann
+kann aber eine systematische Suche nach einem Zugang in den nun
+bekannten Talkessel die ablenkende Kraft des Tabus überwinden.
+
+\subsubsection{Der Ort des Tabus}
+
+Direkt am Eingang zum engen und von den Seiten unzugänglichen
+Schattental befindet sich das Tabu. Es ist ins Erdreich und in die
+hier sehr dichte Vegetation eingewoben und manifestiert sich durch
+auffällige spiralartige Muster, in der die Pflanzen und Bäume,
+darunter auch etliche Ginsengpflanzen (\textbf{EW:Pflanzenkunde}), in
+einem Umkreis von 3m wachsen. Der Ort hat eine starke Dweomeraura.
+
+Der Ginsenggott der Yü ähnelt eher einem Ginseng-Totemgeist. Die
+Priester des Ginsengkultes zählen spieltechnisch als Schamanen. Das
+Tabu ist für sie ein heiliger Ort [ARK\,61], allerdings ist die
+Kenntnis von seiner Lage in Vergessenheit geraten -- und die
+ablenkende Wirkung des Tabus wirkt auch auf die Priester des
+Ginsenggottes selbst. Durch sorgfältiges Vernichten aller Vegetation
+am Ort des Tabus, inklusive des unterirdischen Teils, könnte man das
+Tabu aufheben (und würde sich dabei natürlich den immerwährenden Zorns
+des Ginsenggottes zuziehen). Austreiben oder Bannen der Wirkung ist
+nicht möglich, da es sich um Dweomer handelt.
+
+Etwa 30m weiter ins Tal hinein liegen die Leichen zweier Krieger mit
+dem Dreizackinsignien der Xuan. Waffen und Wertgegenstände wurden
+ihnen abgenommen. Auffällig an ihrem Marschgepäck ist ansonsten noch
+ein kleiner Käfig mit zwei erstochenen Tauben. Dies sind Brieftauben
+zur Kommunikation mit den Xuan in KuenKung, die die Orchideenklingen
+wohlweislich getötet haben. Die beiden haben Schnittwunden am
+Hals. Eine genauere Untersuchung bringt an den Tag, daß einer der
+beiden ein gebrochenes Bein und eine Stichwunde ins Herz aufweist. Mit
+einem \textbf{EW:Erste Hilfe} läßt sich feststellen, daß die
+Schnittwunden von RengKwan (Wurfringe) stammen. Einer der beiden wurde
+an der Halsschlagader getroffen und ist verblutet, während der andere
+wohl erst im Nahkampf erledigt wurde. Auch der Zeitpunktes des Kampfes
+kann geschätzt werden. (\emph{Heilkunde} kann wie üblich für
+\textbf{WM+4} auf den Wurf für \emph{Erste Hilfe} eingesetzt werden.)
+Ein \textbf{EW:Spurenlesen} verrät, daß hier 5--8 Personen gekämpft
+haben. Ein Teil von ihnen hat sich von den üppig mit Vegetation
+bewachsenen Hängen am Rand des Tals auf die Opfer gestürzt. Hat der
+\textbf{EW:Spurenlesen} mindestens 24 erreicht, findet die SpF sogar
+heraus, daß eine einzelne Figur den Hang hinauf geflohen ist. Dort
+läßt die Vegetation allerdings bald nach. Eine weitere Verfolgung der
+Spur auf dem nackten Fels ist beim Alter der Spur ohne Aussicht auf
+Erfolg.
+
+Was ist nun wirklich geschehen? Als DiFang am 6. Draug das Tabu hinter
+sich gebracht hatte und einige Meter ins Schattental gelaufen war,
+hielt er wie üblich kurz inne. Er wußte, daß hierher ihm nie jemand
+folgen konnte. Diese Gewißheit war wie immer Balsam für seine
+Einsiedlerseele. Und so ließ er sich ins hohe Gras nieder und ruhte
+sich aus. Dies bekamen die SaMurai nicht gleich mit, und so näherten
+sie sich mehr als beabsichtigt. DiFang, der die Ruhe des Tales genoß,
+wurde nun endlich auf seine Verfolger aufmerksam und stellte sie
+erschrocken zur Rede. Die bedrängten ihn mit gezogenen Waffen und
+forderten ihn auf, sich zu ergeben und sein Geheimnis
+preiszugeben. Während sich all dies ereignete, schritten wiederum die
+Orchideenklingen zur Tat, die die dichte Vegetation zum Anlaß genommen
+hatten, sich besonders nah an die SaMurai heranzuschleichen. Sie
+kletterten an einer hier noch recht zugängliche Talwand hinauf und
+näherten sich so den drei Kriegern unauffällig von der Seite. Aus dem
+Hinterhalt warfen sie ihre Wurfringe. Der erste ging am Hals getroffen
+zu Boden, der zweite floh über die gegenüberliegende Talwand, und den
+dritten erledigten sie im Nahkampf (mit KanaUchi das Bein gebrochen
+und den Wehrlosen dann erstochen, wobei der SaMurai einer der
+Orchideenklingen noch eine üble Beinverletzung zufügen konnte). DiFang
+sah das alles entsetzt an. Als die maskierten Orchideenklingen auf ihn
+zukamen, geriet er in Panik. Statt seinen Rettern zu danken, lief er
+ins Tal hinein, und die Orchideenklingen hinterher.
+
+Das einer der SaMurai leichtfüßig entkommen konnte, kann nach Ermessen
+des SpL noch ein Nachspiel haben. Der Entflohene läuft nämlich
+schnurstracks zum Kloster DaKuMi, um Verstärkung zu holen. So er es
+denn schafft, sich genau genug an den Weg zu erinnern, um das Tabu
+wieder zu überwinden (keine Selbstverständlichkeit unter den gegebenen
+nicht gerade streßfreien Umständen), kann die Verstärkung (in vom SpL
+zu bestimmender Stärke) frühestens am 12. Draug im Schattental
+eintreffen. Der SpL kann hier einer kampfversessenen Gruppe eine Show
+bieten.
+
+\subsubsection{Vorm verschlossenen Weltentor}
+
+Der Talkessel am Ende des Schattentals ist auf Karte TODO
+abgebildet. Vom Eingang des Tals bis dorthin sind es 3km. Die
+Steilwände sind etwa 30m hoch und nahezu senkrecht. Sie zu erklimmen
+bedarf einer kleinen Klettertour ([DFR\,154f], die Wände haben
+\emph{einige Ritzen}). Aufgrund der dichten Vegetation ist nur schwer
+zu erahnen, was sich unten im Kessel befindet, wenn man von der oberen
+Kante in den Kessel hinabschaut.
+
+
 
 % Schlüsselwort "`Kra'anesch"' ist der Name der Welt, wurde zu
 % RenSchen, Ginseng, in KanThaiTun.
+
+% Luftrochen sammeln sich.
 
 \subsection{OnchiRa}
 
 Siehe Abschnitt \ref{biest} und [DSH\,34ff].
 
 \subsection{AMeis Winterlager}
+\label{winterlager}
 
 AMei, die Älteste der Yü, hat weit im Süden, unweit des SongSchan, mit
 ihrem weiteren Familienkreis und Gefolge ihr Winterlager
 aufgeschlagen.
 
+% TsueChen, Ereignisse mit DiFang beschreiben.
+
 \subsection{PadKu-Tempel auf dem SongSchan}
 
 % Tor nach KueiLi.
 
+\subsection{Begegnungen}
+
+Vorschläge für Begegnungen in der Wildnis, die der SpL passend zum
+dramatischen Verlauf einflechten kann:
+
+\subsubsection{Luftrochen}
+\label{begegnung-luftrochen}
+
+\subsubsection{Tiger auf Ziegenjagd}
+
+\subsubsection{Yao in YamaOni-Gestalt}
+
+\subsubsection{Ginsengsammler der Yü}
+
+% Spurenlesen!
+
+\subsubsection{Händler der Xuan}
+
+\subsubsection{Überfall der Orchideenklingen}
+
 \section{RenSchenYo -- die Ginsengwelt}
 
 % Oszillation: Schnell 2343 und jetzt, langsam 2385
+
+\subsection{Die andere Seite des Tores}
+
+\subsection{Hölzerne Wolken}
+
+\subsection{Eine Weiße Wolke}
+
+\subsection{Zwei dicke Freunde}
+\label{hunar}
+
+\subsection{Arracht}
 
 \appendix
 
@@ -716,28 +1119,27 @@ aufgeschlagen.
 
 \subsection{Familie Ming und ihre Verbündeten}
 
-% MingMing
+\subsubsection{MingMing}
 
-% HaiFeng
+\subsubsection{HaiFeng und seine Seeleute}
 
-% Seeleute
+\subsubsection{BaiSseYuen}
 
-% BaiSseYuen
 
 \subsection{Familie Xuan und ihre Verbündeten}
 
-% LiXuan
+\subsubsection{LiXuan und weitere Händler}
 
-% ChenXuan
+\subsubsection{ChenXuan}
 
-% MiTo
+\subsubsection{MiTo}
 
-% TsueChen
+\subsubsection{TsueChen}
 
 % Direktor LangTsong im Finanzministerium HuPu im Range eines
 % Silberfasans BoZjan (in DSH im Range eines Pfaus
 
-% SaMurai
+\subsubsection{SaMurai der Xuan}
 
 \subsection{Yü}
 
@@ -746,32 +1148,103 @@ durchschnittliche KanThai und haben eine deutlich dunklere
 Hautfarbe. Dank des allgegenwärtigen Ginseng ist ihre Lebenserwartung
 weitaus höher als üblich. Viele Yü werden über 100 Jahre alt.
 
-% DiFang
+\subsubsection{DiFang}
 
-% AMei
+\subsubsection{AMei}
+
+% Erfahrung mit Aufstand vor vielen Jahrzehnten.
+
+\subsubsection{Ginsengsammler}
 
 \subsection{In OnchiRa}
 
-% KwanLi
+\subsubsection{KwanLi}
 
-% MeiHuaLi
+% Verhalten bei Entdeckung Yaos.
 
-% Yao
+\subsubsection{MeiHuaLi}
+
+MeiHua ist zwar genauso einfach gekleidet und von der harten
+Landarbeit geprägt wie die übrigen Dorfbewohner und somit in keinster
+Weise mit dem Schönheitsideal der elaboriert herausgeputzten Damen der
+Großstädte zu messen. Gerade in ihrer natürlichen Schlichtheit wirkt
+sie aber zart und anziehend, ganz wie eine Pflaumenblüte, nach der sie
+benannt wurde. Ihr Erscheinungsbild steht in einem geradezu obszönen
+Kontrast zur Grobheit KwanLis.
+
+% Wird schwanger von Yao.
+% Verhalten bei Konfrontation.
+
+\subsubsection{Yao}
+\label{yao}
+
+% Aussehen, _Geschichte, Verhalten bei Gefangennahme
 
 \subsection{HaLan -- die Orchideenklingen}
 
-% KokoRoDi und weitere Orchideenklingen
+Die \emph{Weiße Orchidee} hat eine Gruppe von 37 Orchideenklingen nach
+Yü entsandt, um die Aktivitäten der Xuan zu sabotieren und möglichst
+viele Ginsengsammler der Yü auf die eigene Seite zu ziehen. Zu Beginn
+des Abenteuers haben sie bereits aufgegeben, AMei von einer
+Zusammenarbeit zu überzeugen, und versuchen jetzt, einzelne
+Ginsengsammler dafür zu gewinnen, sich AMeis Anordnungen zu
+widersetzen und stattdessen an die \emph{Weiße Orchidee} zu
+verkaufen. Außerdem nutzen sie jede Gelegenheit, Händler der Xuan zu
+überfallen.
 
+\textsc{Zukunft:} Über die Jahre setzt sich die Einsicht durch, daß
+die Strategie der \emph{Weißen Orchidee} nicht sonderlich erfolgreich
+ist. Nur wenige Yü schließen sich der \emph{Weißen Orchidee} an, aber
+die dadurch gesäte Zwietracht schadet eher den Yü als dem KuraiAnat.
+Die Überfälle sind eher Nadelstiche als eine ernsthafte Gefahr für die
+Xuan, die die dadurch erlittenen Verluste leichter verwinden können als
+die Orchideenklingen. Möglicherweise können Aktionen der SpF diese
+Einsicht beschleunigen, um allen Beteiligten Leid zu ersparen. Im
+Jahre 2400\,nL sind die Orchideenklingen jedenfalls aus Yü weitgehend
+abgezogen und widmen sich lohnenderen Zielen. In jedem Falle hat sich
+der \emph{Weiße Lotus} bis dahin weitgehend von der \emph{Weißen
+  Orchidee} getrennt.
+
+\subsubsection{KokoRo}
+
+% große Schwester
 % Dea ex machina
 % maskiert
 
+TODO: Werte übertragen.
+
+\textsc{Zukunft:} Wenn KokoRo nicht mit den SpF nach RenSchenYo reist,
+so hat sie bei Rückkehr der SpF eine glänzende Karriere innerhalb der
+\emph{Weißen Orchidee} hinter sich gebracht. Sie ist mittlerweile eine
+KiDo-Meisterin. Es ist allerdings vorgesehen, daß sie anderweitig zu
+tun hat und nach der Rückkehr der SpF nicht mehr ins Abenteuer
+eingreift. Sollte dies doch nötig sein (z.\,B. wie oben beschrieben
+als \emph{dea ex machina}), können die Werte von LonChen (siehe
+unten) als Orientierungshilfe dienen.
+
+
+\subsubsection{LonChen}
+
+Sollte es der Verlauf der Handlung erfordern, kann LonChen, der
+Anführer der Operation in Erscheinung treten, ein echter Meister des
+KiDo.
+
+TODO: Werte.
+
+\subsubsection{Weitere Orchideenklingen}
+
+Der Einfachheit halber haben die anderen Orchideenklingen die
+gleichen Werte wie KokoRo. Der SpL kann auch jeweils andere
+KiDo-Techniken des \textbf{LanChuKo}-Stiles [KTP\,200] einsetzen.
+
+TODO: Einige können Scharfschießen für Wurfscheiben.
+
 \subsection{Bewohner RenSchenYos}
 
-% Luftrochen
+\subsubsection{Luftrochen}
 
-% Hunar
+\subsubsection{Hunar}
 
-% Arracht
+\subsubsection{Arracht}
 
-%\end{multicols}
 \end{document}
